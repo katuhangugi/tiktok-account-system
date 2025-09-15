@@ -1,0 +1,98 @@
+<div class="row">
+    <div class="col-12 mb-4">
+        <div class="card shadow">
+            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                <h6 class="m-0 font-weight-bold text-primary">Account Analytics</h6>
+                <div class="dropdown no-arrow">
+                    <a class="dropdown-toggle" href="#" role="button" id="analyticsDropdown" 
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="analyticsDropdown">
+                        <li><a class="dropdown-item" href="#" id="refresh-analytics-btn">Refresh</a></li>
+                        <li><a class="dropdown-item" href="#" id="export-analytics-btn">Export</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <label for="account-select" class="form-label">Select Account</label>
+                        <select class="form-select" id="account-select">
+                            <option value="">All Accounts</option>
+                            <!-- Accounts will be loaded here -->
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="time-range-select" class="form-label">Time Range</label>
+                        <select class="form-select" id="time-range-select">
+                            <option value="7">Last 7 Days</option>
+                            <option value="14">Last 14 Days</option>
+                            <option value="30" selected>Last 30 Days</option>
+                            <option value="90">Last 90 Days</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <div class="card h-100">
+                            <div class="card-header">
+                                <h6 class="m-0 font-weight-bold text-primary">Follower Growth</h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="chart-area">
+                                    <canvas id="followerChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 mb-4">
+                        <div class="card h-100">
+                            <div class="card-header">
+                                <h6 class="m-0 font-weight-bold text-primary">Video Uploads</h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="chart-area">
+                                    <canvas id="videoChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card shadow">
+                            <div class="card-header py-3">
+                                <h6 class="m-0 font-weight-bold text-primary">Account Performance</h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered" id="analyticsTable" width="100%" cellspacing="0">
+                                        <thead>
+                                            <tr>
+                                                <th>Account</th>
+                                                <th>Followers</th>
+                                                <th>7d Growth</th>
+                                                <th>30d Growth</th>
+                                                <th>Videos</th>
+                                                <th>7d Uploads</th>
+                                                <th>30d Uploads</th>
+                                                <th>Engagement</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <!-- Analytics data will be loaded here -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

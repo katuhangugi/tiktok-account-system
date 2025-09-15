@@ -1,0 +1,58 @@
+<div class="table-responsive">
+    <table class="table table-bordered table-hover" id="accountsTable" width="100%" cellspacing="0">
+        <thead class="table-light">
+            <tr>
+                <th width="5%">ID</th>
+                <th>Account</th>
+                <th>Nickname</th>
+                <th>Followers</th>
+                <th>Following</th>
+                <th>Videos</th>
+                <th>Likes</th>
+                <th>Group</th>
+                <th width="12%">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Accounts will be loaded here -->
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="3">Total</th>
+                <th id="totalFollowers">0</th>
+                <th id="totalFollowing">0</th>
+                <th id="totalVideos">0</th>
+                <th id="totalLikes">0</th>
+                <th colspan="2"></th>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+
+<div class="d-flex justify-content-between align-items-center mt-3">
+    <div class="btn-group">
+        <button type="button" class="btn btn-outline-secondary btn-sm" id="refreshAccountsBtn">
+            <i class="fas fa-sync-alt me-1"></i> Refresh
+        </button>
+        <button type="button" class="btn btn-outline-secondary btn-sm" id="exportAccountsBtn">
+            <i class="fas fa-download me-1"></i> Export
+        </button>
+    </div>
+    
+    <div class="d-flex">
+        <div class="input-group input-group-sm me-2" style="width: 200px;">
+            <span class="input-group-text"><i class="fas fa-filter"></i></span>
+            <select class="form-select" id="accountGroupFilter">
+                <option value="">All Groups</option>
+                <!-- Groups will be populated here -->
+            </select>
+        </div>
+        
+        <div class="input-group input-group-sm" style="width: 200px;">
+            <input type="text" class="form-control" placeholder="Search..." id="accountSearchInput">
+            <button class="btn btn-outline-secondary" type="button">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </div>
+</div>

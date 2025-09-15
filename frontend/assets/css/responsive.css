@@ -1,0 +1,170 @@
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .sidebar {
+        width: 220px;
+    }
+    
+    .main {
+        margin-left: 220px;
+        width: calc(100% - 220px);
+    }
+    
+    .stat-value {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .sidebar {
+        margin-left: -220px;
+    }
+    
+    .sidebar.active {
+        margin-left: 0;
+    }
+    
+    .main {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .main.active {
+        margin-left: 220px;
+        width: calc(100% - 220px);
+    }
+    
+    .card-stat .card-body {
+        padding: 1rem;
+    }
+    
+    .stat-value {
+        font-size: 1.1rem;
+    }
+    
+    .stat-label {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: row;
+    }
+    
+    .navbar-nav .nav-item {
+        margin-left: 0.5rem;
+    }
+    
+    .chart-container {
+        height: 250px;
+    }
+    
+    .table-responsive {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .quick-actions {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 576px) {
+    .auth-card {
+        border-radius: 0;
+        box-shadow: none;
+    }
+    
+    .auth-body {
+        padding: 1.5rem;
+    }
+    
+    .sidebar-brand {
+        padding: 1rem;
+    }
+    
+    .sidebar-user {
+        padding: 1rem;
+    }
+    
+    .stat-icon {
+        font-size: 1.5rem;
+    }
+    
+    .admin-tabs .nav-link {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+    
+    /* Force tables to not be like tables anymore */
+    table.responsive-table,
+    table.responsive-table thead,
+    table.responsive-table tbody,
+    table.responsive-table th,
+    table.responsive-table td,
+    table.responsive-table tr {
+        display: block;
+    }
+    
+    /* Hide table headers (but not display: none;, for accessibility) */
+    table.responsive-table thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    
+    table.responsive-table tr {
+        border: 1px solid #e3e6f0;
+        margin-bottom: 1rem;
+    }
+    
+    table.responsive-table td {
+        /* Behave like a "row" */
+        border: none;
+        border-bottom: 1px solid #e3e6f0;
+        position: relative;
+        padding-left: 50%;
+        white-space: normal;
+        text-align: left;
+    }
+    
+    table.responsive-table td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 0.75rem;
+        left: 1rem;
+        width: 45%;
+        padding-right: 1rem;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+        content: attr(data-title);
+    }
+}
+
+/* Print Styles */
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    
+    .print-content, .print-content * {
+        visibility: visible;
+    }
+    
+    .print-content {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+    
+    .no-print {
+        display: none !important;
+    }
+    
+    .table-responsive {
+        overflow: visible;
+    }
+}

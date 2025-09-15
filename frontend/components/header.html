@@ -1,0 +1,60 @@
+<header class="navbar navbar-expand navbar-light navbar-bg">
+    <div class="container-fluid">
+        <button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        
+        <div class="navbar-collapse collapse">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="quickActionsDropdown" 
+                       role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-bolt me-1"></i> Quick Actions
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="quickActionsDropdown">
+                        <li><a class="dropdown-item" href="#/accounts"><i class="fas fa-plus me-1"></i> Add Account</a></li>
+                        <li><a class="dropdown-item" href="#/users"><i class="fas fa-user-plus me-1"></i> Add User</a></li>
+                        <li><a class="dropdown-item" href="#/groups"><i class="fas fa-object-group me-1"></i> Add Group</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#/analytics"><i class="fas fa-chart-line me-1"></i> View Analytics</a></li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="notificationsDropdown" 
+                       role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-bell"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="notification-badge">
+                            0
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="notificationsDropdown">
+                        <li><h6 class="dropdown-header">Notifications</h6></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <div id="notification-list">
+                            <li class="px-3 py-2 text-muted small">No new notifications</li>
+                        </div>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item text-center" href="#">View all notifications</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" id="userDropdown" 
+                       role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="text-dark" id="username-display"></span>
+                        <img src="assets/images/default-avatar.png" class="avatar img-fluid rounded-circle me-1" alt="User Avatar">
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                        <a class="dropdown-item" href="#/profile"><i class="fas fa-user me-2"></i> Profile</a>
+                        <a class="dropdown-item" href="#"><i class="fas fa-cog me-2"></i> Settings</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#" id="logout-btn"><i class="fas fa-sign-out-alt me-2"></i> Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>

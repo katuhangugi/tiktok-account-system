@@ -1,0 +1,41 @@
+services:
+  app:
+    entrypoint:
+    - sleep
+    - infinity
+    image: docker/dev-environments-default:stable-1
+    init: true
+    volumes:
+    - type: bind
+      source: /var/run/docker.sock
+      target: /var/run/docker.sock
+
+server:
+  address: ":8080"
+  readTimeout: "15s"
+  writeTimeout: "15s"
+  idleTimeout: "60s"
+  shutdownTimeout: "5s"
+
+database:
+  host: "localhost"
+  port: "3306"
+  user: "root"
+  password: ""
+  name: "tiktok_management_system"
+  sslmode: "disable"
+
+jwt:
+  secret: "devnet@1015!!??pynet@dev_1015"
+  accessTokenTTL: "15m"
+  refreshTokenTTL: "24h"
+  issuer: "tiktok-account-system"
+
+tiktokapi:
+  endpoint: "https://www.tiktok.com/@%s"
+  key: ""
+  timeout: "10s"
+
+logging:
+  level: "debug"
+  file: ""

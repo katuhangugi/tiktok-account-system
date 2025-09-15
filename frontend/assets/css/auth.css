@@ -1,0 +1,120 @@
+/* Auth Page Styles */
+.auth-container {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fc;
+    background-image: linear-gradient(180deg, #f8f9fc 10%, #e9ecef 100%);
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 400px;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+    overflow: hidden;
+}
+
+.auth-header {
+    background-color: #4e73df;
+    background-image: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.auth-header h3 {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.auth-header p {
+    opacity: 0.8;
+    margin-bottom: 0;
+}
+
+.auth-body {
+    padding: 2rem;
+    background-color: white;
+}
+
+.auth-form .form-control {
+    padding: 0.75rem 1rem;
+    border-radius: 0.35rem;
+}
+
+.auth-form .form-control:focus {
+    border-color: #bac8f3;
+    box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25);
+}
+
+.auth-footer {
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+    text-align: center;
+    font-size: 0.875rem;
+    color: #858796;
+}
+
+.btn-auth {
+    padding: 0.75rem;
+    font-weight: 600;
+    background-color: #4e73df;
+    border-color: #4e73df;
+    transition: all 0.3s;
+}
+
+.btn-auth:hover {
+    background-color: #2e59d9;
+    border-color: #2653d4;
+}
+
+.auth-divider {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+    color: #b7b9cc;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #e3e6f0;
+}
+
+.auth-divider::before {
+    margin-right: 1rem;
+}
+
+.auth-divider::after {
+    margin-left: 1rem;
+}
+
+/* Error states */
+.is-invalid {
+    border-color: #e74a3b;
+}
+
+.invalid-feedback {
+    color: #e74a3b;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+/* Loading state */
+.auth-loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}

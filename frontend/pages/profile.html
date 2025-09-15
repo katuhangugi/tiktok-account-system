@@ -1,0 +1,60 @@
+<div class="row justify-content-center">
+    <div class="col-xl-8 col-lg-10">
+        <div class="card shadow mb-4">
+            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                <h6 class="m-0 font-weight-bold text-primary">User Profile</h6>
+            </div>
+            <div class="card-body">
+                <form id="profile-form">
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="username" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="username" readonly>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="role" class="form-label">Role</label>
+                            <input type="text" class="form-control" id="role" readonly>
+                        </div>
+                    </div>
+                    
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="group" class="form-label">Group</label>
+                            <input type="text" class="form-control" id="group" readonly>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="created" class="form-label">Created At</label>
+                            <input type="text" class="form-control" id="created" readonly>
+                        </div>
+                    </div>
+                    
+                    <hr>
+                    
+                    <h5 class="mb-3">Change Password</h5>
+                    
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="current-password" class="form-label">Current Password</label>
+                            <input type="password" class="form-control" id="current-password">
+                        </div>
+                    </div>
+                    
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="new-password" class="form-label">New Password</label>
+                            <input type="password" class="form-control" id="new-password">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="confirm-password" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirm-password">
+                        </div>
+                    </div>
+                    
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <button type="submit" class="btn btn-primary">Update Password</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

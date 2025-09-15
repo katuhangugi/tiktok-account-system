@@ -1,0 +1,162 @@
+/* Dashboard Page Styles */
+.dashboard-header {
+    margin-bottom: 1.5rem;
+}
+
+.dashboard-title {
+    font-weight: 700;
+    color: #4e73df;
+    margin-bottom: 0.5rem;
+}
+
+.dashboard-subtitle {
+    color: #858796;
+    font-size: 0.875rem;
+}
+
+/* Stats Cards */
+.card-stat {
+    border-left: 0.25rem solid;
+    transition: transform 0.3s;
+}
+
+.card-stat:hover {
+    transform: translateY(-5px);
+}
+
+.card-stat .card-body {
+    padding: 1rem 1.5rem;
+}
+
+.stat-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #5a5c69;
+}
+
+.stat-label {
+    font-size: 0.875rem;
+    color: #858796;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.stat-icon {
+    font-size: 2rem;
+    color: #dddfeb;
+}
+
+/* Chart Containers */
+.chart-container {
+    position: relative;
+    height: 300px;
+}
+
+.chart-area {
+    height: 100%;
+    min-height: 250px;
+}
+
+.chart-pie {
+    height: 100%;
+    min-height: 200px;
+}
+
+/* Trend indicators */
+.trend-up {
+    color: #1cc88a;
+}
+
+.trend-down {
+    color: #e74a3b;
+}
+
+.trend-neutral {
+    color: #858796;
+}
+
+/* Recent Activity */
+.recent-activity {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.activity-item {
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    border-left: 1px solid #e3e6f0;
+}
+
+.activity-item:last-child {
+    border-left: 1px solid transparent;
+}
+
+.activity-item::before {
+    content: "";
+    position: absolute;
+    left: -6px;
+    top: 20px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #4e73df;
+    border: 3px solid #e3e6f0;
+}
+
+.activity-time {
+    font-size: 0.7rem;
+    color: #b7b9cc;
+}
+
+.activity-content {
+    font-size: 0.875rem;
+}
+
+/* Quick Actions */
+.quick-actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.quick-action-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 0.35rem;
+    background-color: #f8f9fc;
+    color: #4e73df;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.quick-action-btn:hover {
+    background-color: #e9ecef;
+    transform: translateY(-3px);
+}
+
+.quick-action-icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.quick-action-text {
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card-stat {
+        margin-bottom: 1rem;
+    }
+    
+    .quick-actions {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}

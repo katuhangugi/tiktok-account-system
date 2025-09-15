@@ -1,0 +1,160 @@
+/* Admin Page Styles */
+.admin-tabs .nav-link {
+    color: #858796;
+    font-weight: 600;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    transition: all 0.3s;
+}
+
+.admin-tabs .nav-link:hover {
+    color: #4e73df;
+    border: none;
+}
+
+.admin-tabs .nav-link.active {
+    color: #4e73df;
+    border-bottom: 3px solid #4e73df;
+    background-color: transparent;
+}
+
+/* System Overview Cards */
+.system-card {
+    transition: all 0.3s;
+}
+
+.system-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.system-card .card-body {
+    padding: 1.25rem;
+}
+
+.system-stat {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.system-label {
+    font-size: 0.875rem;
+    color: #858796;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* Danger Zone */
+.danger-zone {
+    border-left: 4px solid #e74a3b;
+}
+
+.danger-zone .card-header {
+    background-color: rgba(231, 74, 59, 0.1);
+    color: #e74a3b;
+}
+
+.danger-btn {
+    transition: all 0.3s;
+}
+
+.danger-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0.5rem 1rem rgba(231, 74, 59, 0.15);
+}
+
+/* Settings Form */
+.settings-form .form-control {
+    padding: 0.75rem 1rem;
+}
+
+.settings-form .form-control:focus {
+    border-color: #bac8f3;
+    box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25);
+}
+
+.settings-form .form-check-input:checked {
+    background-color: #4e73df;
+    border-color: #4e73df;
+}
+
+/* Logs Table */
+.log-table {
+    font-size: 0.875rem;
+}
+
+.log-level {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.log-level.info {
+    background-color: rgba(54, 185, 204, 0.1);
+    color: #36b9cc;
+}
+
+.log-level.warning {
+    background-color: rgba(246, 194, 62, 0.1);
+    color: #f6c23e;
+}
+
+.log-level.error {
+    background-color: rgba(231, 74, 59, 0.1);
+    color: #e74a3b;
+}
+
+/* User Management */
+.user-role-badge {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.35rem 0.65rem;
+    border-radius: 0.25rem;
+}
+
+.role-superadmin {
+    background-color: rgba(231, 74, 59, 0.1);
+    color: #e74a3b;
+}
+
+.role-manager {
+    background-color: rgba(246, 194, 62, 0.1);
+    color: #f6c23e;
+}
+
+.role-operator {
+    background-color: rgba(54, 185, 204, 0.1);
+    color: #36b9cc;
+}
+
+/* Group Management */
+.group-status {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.35rem 0.65rem;
+    border-radius: 0.25rem;
+}
+
+.status-active {
+    background-color: rgba(28, 200, 138, 0.1);
+    color: #1cc88a;
+}
+
+.status-inactive {
+    background-color: rgba(133, 135, 150, 0.1);
+    color: #858796;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .admin-tabs .nav-link {
+        padding: 0.75rem 1rem;
+        font-size: 0.875rem;
+    }
+    
+    .system-card {
+        margin-bottom: 1rem;
+    }
+}
